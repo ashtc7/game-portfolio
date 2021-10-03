@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sugar Scramble</title>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+    </style>
+    <link rel="stylesheet" type="text/css" href="styles/sugar_scramble.css">
+  </head>
+
+  <body style="width: 100%">
+    <h1>✧🍬 Sugar Scramble 🍬✧</h1>
+    <div id="game-container">
+      <canvas id="game-canvas"> </canvas>
+      <div id="actions">
+        <!-- <button type="link" href="/part10.html"></a> -->
+        <form action="/sugar_scramble.html" method="get">
+          <button type="submit">Play Again</button>
+        </form>
+        <button type="button" onclick="toggleMusic()">Toggle Music</button>
+        <button type="button" onclick="clearHighScores()">Reset Scores</button>
+        <form action="index.html" method="get">
+          <button type="submit">Home</button>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <h2>High Scores</h2>
+      <div id="scores"></div>
+    </div>
+
+    <script type="text/javascript" src="javascript/sugar_scramble.js"></script>
+  </body>
+</html>
